@@ -1,0 +1,36 @@
+_id,Medicine Name,Uses,When to Take,Food Considerations
+66f85ca802cab15156ffd703,Paracetamol,"Pain relief, fever reduction",Every 4-6 hours,Can be taken with or without food
+66f85ca802cab15156ffd704,Ibuprofen,"Pain relief, inflammation reduction",Every 6-8 hours,After food; avoid on an empty stomach
+66f85ca802cab15156ffd705,Amoxicillin,Bacterial infections,Every 8-12 hours,Best taken with food to avoid stomach upset
+66f85ca802cab15156ffd706,Metformin,Type 2 Diabetes,With meals,Take with food to reduce gastrointestinal side effects
+66f85ca802cab15156ffd707,Lisinopril,High blood pressure,Once daily (morning),Can be taken with or without food
+66f85ca802cab15156ffd708,Atorvastatin,High cholesterol,Evening,Can be taken with or without food
+66f85ca802cab15156ffd709,Cetirizine,Allergies,Once daily (evening),Can be taken with or without food
+66f85ca802cab15156ffd70a,Omeprazole,"Acid reflux, GERD",30 minutes before meals,Take on an empty stomach
+66f85ca802cab15156ffd70b,Levothyroxine,Hypothyroidism,"Morning, 30 min before food",Avoid food for 30 minutes after taking
+66f85ca802cab15156ffd70c,Aspirin,"Pain relief, heart attack prevention",Once daily,After food to avoid stomach upset
+66f85ca802cab15156ffd70d,Simvastatin,High cholesterol,Evening,Can be taken with or without food
+66f85ca802cab15156ffd70e,Furosemide,"Edema, high blood pressure",Morning,Can be taken with or without food
+66f85ca802cab15156ffd70f,Azithromycin,Bacterial infections,Once daily,Best taken with food to avoid stomach upset
+66f85ca802cab15156ffd710,Warfarin,"Blood thinner, prevents clots",Once daily (evening),Avoid foods rich in vitamin K (like leafy greens)
+66f85ca802cab15156ffd711,Loratadine,Allergies,Once daily (morning),Can be taken with or without food
+66f85ca802cab15156ffd712,Doxycycline,"Bacterial infections, acne",Once or twice daily,Best taken with food to avoid stomach upset
+66f85ca802cab15156ffd713,Metoprolol,"High blood pressure, heart conditions",Once or twice daily,Can be taken with or without food
+66f85ca802cab15156ffd714,Prednisone,"Inflammation, autoimmune conditions",Once daily (morning),Take with food to avoid stomach upset
+66f85ca802cab15156ffd715,Hydrochlorothiazide,"Edema, high blood pressure",Morning,Can be taken with or without food
+66f85ca802cab15156ffd716,Ranitidine,"Acid reflux, ulcers",Once or twice daily,Best taken before meals
+66f85ca802cab15156ffd717,Calciferol,Vitamin D deficiency,Once daily,Can be taken with or without food; best with fatty foods for better absorption
+66f85ca802cab15156ffd718,Cyanocobalamin ,Vitamin B12 deficiency,Once daily,Can be taken with or without food
+66f85ca802cab15156ffd719,Feosol	,Iron deficiency,Once or twice daily,Take with food to avoid stomach upset; avoid taking with calcium-rich foods
+66f85ca802cab15156ffd71a,Caltrate,Calcium deficiency,Once or twice daily,Best taken with meals; avoid high-fiber foods close to intake
+66f85ca802cab15156ffd71b,Folic Acid	,Folate deficiency,Once daily,Can be taken with or without food
+66f85ca802cab15156ffd71c,Ester-C,Vitamin C deficiency,Once or twice daily,Can be taken with or without food
+66f85ca802cab15156ffd71d,Mag-Ox	,Magnesium deficiency,Once daily,Can be taken with or without food
+66f85ca802cab15156ffd71e,Cold-Eeze,Zinc deficiency,Once daily,Best taken with food to avoid stomach upset
+66f85ca802cab15156ffd71f,Retinol ,Vitamin A deficiency,Once daily,Can be taken with or without food
+66f85ca802cab15156ffd720,Tocopherol,Vitamin E deficiency,Once daily,Best taken with fatty foods for better absorption
+66f85ca802cab15156ffd721,K-Dur,Potassium deficiency,Once daily,Take with food to avoid gastrointestinal upset
+66f85ca802cab15156ffd722,Pyridoxine ,Vitamin B6 deficiency,Once daily,Can be taken with or without food
+66f85ca802cab15156ffd723,Copper Gluconate,Copper deficiency,Once daily,Can be taken with or without food
+66f85ca802cab15156ffd724,Manganese Gluconate,Manganese deficiency,Once daily,Can be taken with or without food
+66f85ca802cab15156ffd725,Biotin,Biotin deficiency,Once daily,Can be taken with or without food
