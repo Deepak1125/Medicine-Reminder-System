@@ -7,10 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const name = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value.trim();
-    const role = document.getElementById("role").value;
 
     // Basic validation
-    if (!name || !password || !role) {
+    if (!name || !password) {
       errorMessage.textContent = "All fields are required.";
       return;
     }
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const response = await fetch("http://localhost:3000/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, password, role })
+        body: JSON.stringify({ name, password })
       });
 
       const result = await response.json();
