@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedRoutine App</title>
+    <link rel="stylesheet" href="Medroutine.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>MedRoutine App</h1>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+      <h2>Search Medicine Information</h2>
+      <input
+        type="text"
+        id="searchMedicine"
+        placeholder="Enter medicine name..."
+        oninput="filterMedicines()"
+      />
+      <ul id="suggestions" class="suggestions-list"></ul>
+      <button id="searchButton" onclick="searchMedicine()">Search</button>
+      <div id="medicineInfo"></div>
+    </section>
+
+    <!-- Alarms Section -->
+    <section class="alarms-section">
+      <h2>Set Medication Alarms</h2>
+      <form id="alarmForm">
+        <label for="medicineName">Medicine Name:</label>
+        <input
+          type="text"
+          id="medicineName"
+          placeholder="Medicine name"
+          required
+        />
+        <label for="alarmTime">Set Alarm:</label>
+        <input type="time" id="alarmTime" required />
+        <button type="submit">Set Alarm</button>
+      </form>
+      <div id="alarmList">
+        <h3>Active Alarms</h3>
+        <ul id="alarms"></ul>
+      </div>
+    </section>
+
+    <!-- Notifications Section -->
+    <section class="notifications-section">
+      <h2>Notifications</h2>
+      <button id="Clear">Clear</button>
+      <div id="notificationsList">
+        <ul id="notifications">
+          <!-- Notifications will be dynamically loaded here -->
+        </ul>
+      </div>
+    </section>
+
+    <script src="Medroutine.js"></script>
+  </body>
+</html>

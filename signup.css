@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background: linear-gradient(145deg, #ffffff, #f0f4f8);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 18.75rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.signup-container:hover {
+    transform: scale(1.01);
+}
+
+h2 {
+    margin-bottom: 1.25rem;
+    color: #2e7d32;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3125rem;
+    color: #555;
+    font-weight: 500;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 1.25rem);
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    border: 1px solid #cfd8dc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 8px rgba(46, 125, 50, 0.4);
+    outline: 2px solid #2e7d32;
+    outline-offset: 2px;
+}
+
+button {
+    width: 100%;
+    padding: 0.625rem;
+    border: none;
+    background-color: #2e7d32;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1b5e20;
+    transform: scale(1.02);
+}
+
+#error-message,
+#success-message {
+    margin-top: 0.625rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#error-message {
+    color: #d32f2f;
+}
+
+#success-message {
+    color: #388e3c;
+}
+
+#login_frwd {
+    display: block;
+    width: 12.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#login_frwd:hover {
+    color: white;
+}
+

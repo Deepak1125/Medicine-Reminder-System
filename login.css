@@ -1,0 +1,151 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: linear-gradient(145deg, #ffffff, #f0f4f8);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 18.75rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    transform: scale(1.01);
+}
+
+h2 {
+    margin-bottom: 1.25rem;
+    color: #2e7d32;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3125rem;
+    color: #555;
+    font-weight: 500;
+    text-align: left;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 1.25rem);
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    border: 1px solid #cfd8dc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 8px rgba(46, 125, 50, 0.4);
+    outline: 2px solid #2e7d32;
+    outline-offset: 2px;
+}
+
+button {
+    width: 100%;
+    padding: 0.625rem;
+    border: none;
+    background-color: #2e7d32;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1b5e20;
+    transform: scale(1.02);
+}
+
+#error-message {
+    color: #d32f2f;
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Style for the dropdown label */
+label[for="role"] {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for the dropdown itself */
+select#role {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Optional: Add hover and focus effects */
+select#role:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+select#role:hover {
+  background-color: #f1f1f1;
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .login-container {
+        width: 90%;
+        max-width: 18.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    button {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #2e7d32;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #f0f4f8);
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="time"],
+button {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 1px solid #cfd8dc;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="time"]:focus {
+    box-shadow: 0 0 8px rgba(46, 125, 50, 0.4);
+}
+
+.alarms-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1b5e20;
+    transform: scale(1.02);
+}
+
+#Clear {
+    position: relative;
+    top: -4rem;
+    right: -64rem;
+    height: 50px;
+    width: 130px;
+    background-color: #d32f2f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+}
+
+#alarmList {
+    margin-top: 20px;
+}
+
+#alarms {
+    list-style-type: none;
+    padding: 0;
+}
+
+#alarms li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background-color: #e3f2fd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Toggle switch styling */
+input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    border: 2px solid #999;
+    position: relative;
+    margin-left: auto; /* aligns to the right inside flex container */
+}
+
+/* Checked state */
+input[type="checkbox"]:checked {
+    background-color: #66bb6a;
+}
+
+/* Toggle knob */
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 0.5px;
+    left: 1px;
+    transition: transform 3s ease-in-out; 
+}
+
+/* Move knob when checked */
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+
+#medicineInfo,
+#alarmList {
+    margin-top: 20px;
+}
+
+#medicineInfo p,
+#alarms li {
+    background-color: #dcedc8;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: #444;
+    font-size: 1.1em;
+}
+
+#notifications li {
+    position: relative;
+    top: -35px;
+    background-color: #ffe082;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: #333;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 15px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+#searchButton {
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.popup-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ef5350;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadein 0.5s forwards, fadeout 0.5s 4.5s forwards;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+.suggestions-list li:hover {
+    background-color: #e0f2f1;
+}
+
+header h1 {
+    transition: color 0.7s ease-in-out, text-shadow 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+header h1:hover {
+   color: #f6df0e; /* soft mint green */
+   text-shadow: 3px 3px 3px rgb(110, 204, 255);
+}  
+
+
+/* Accessibility and readability improvements */
+body {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Improve focus visibility */
+input:focus, button:focus {
+    outline: 2px solid #2e7d32;
+    outline-offset: 2px;
+}
+
+/* Add smooth transitions for interactive elements */
+a, button, input {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Improve contrast for better visibility */
+label {
+    color: #222;
+}
+
+#Clear {
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effects for list items */
+#alarms li:hover, #medicineInfo p:hover, #notifications li:hover {
+    background-color: #c8e6c9;
+    transform: scale(1.01);
+}
+
+/* Improve checkbox accessibility */
+input[type="checkbox"] {
+    border: 2px solid #999;
+}
+
+/* Add accessible font sizes to popup notifications */
+.popup-notification {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Improve suggestion list visibility */
+.suggestions-list li {
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Add subtle animation to section hover */
+section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fas.fa-trash {
+  color: #d32f2f;
+  margin-left: 10px;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.fas.fa-trash:hover {
+  color: #b71c1c;
+}
